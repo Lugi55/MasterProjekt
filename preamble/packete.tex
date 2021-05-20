@@ -5,14 +5,14 @@
 
 % Eigene
 \usepackage[utf8]{inputenc} %% Umlaute
-\usepackage[printonlyused, withpage]{acronym} %% Abkuerzungsverzeichnis (nur verwendete)
+\usepackage[dua]{acronym} %% Abkuerzungsverzeichnis (nur verwendete)
 \usepackage{todonotes} %% TODOs moeglich mit \todo{}
 \usepackage{booktabs} %% Tabellen
 \usepackage{amsmath} %% Formeln
 \usepackage{listings} %% Codebeispiele
 \usepackage{subfigure} %% Mehrere Bilder nebeneinander
 \usepackage{hyperref} %% referenzen innerhalb und außerhalb des Dokumentes
-\usepackage[headsepline]{scrpage2} %%Numerrierung der Seiten + Kapitelnamen in Kopfzeile inkl. Trennstrich
+\usepackage[headsepline]{scrlayer-scrpage} %%Numerrierung der Seiten + Kapitelnamen in Kopfzeile inkl. Trennstrich
 \pagestyle{scrheadings} %% die folgenden Zeilen sorgen für die korrekte Nummerierung und deren Anzeige 
 \clearscrheadfoot %% und für die Kopfzeile mit aktuellem Kapitel etc.
 \ihead{\headmark}
@@ -20,9 +20,8 @@
 \automark{chapter}
 \usepackage{float} %% Floatpackage um Grafik-Positionen zu forcieren
 \newcommand*{\quelle}[1]{\par\raggedleft\footnotesize Quelle:~#1}
-\usepackage{textcomp}
-\usepackage{eurosym}
-\usepackage{graphicx}
+\usepackage{trfsigns}
+
 
 % Eigenes Design 
 %TODO loeschen wenn default HTWG Design (was es nicht wirklich gibt) gewuuenscht ist
@@ -40,3 +39,4 @@
 \usepackage{xcolor}
 \usepackage{listings}
 \usepackage{caption}
+\usepackage{natbib}
